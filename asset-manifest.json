@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ra-8-hooks-context-8.1-use-effect/static/css/main.c2cab247.css",
+    "main.js": "/ra-8-hooks-context-8.1-use-effect/static/js/main.f23f591b.js",
+    "index.html": "/ra-8-hooks-context-8.1-use-effect/index.html",
+    "main.c2cab247.css.map": "/ra-8-hooks-context-8.1-use-effect/static/css/main.c2cab247.css.map",
+    "main.f23f591b.js.map": "/ra-8-hooks-context-8.1-use-effect/static/js/main.f23f591b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.f23f591b.js"
+  ]
+}
