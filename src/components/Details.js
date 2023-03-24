@@ -10,7 +10,13 @@ function Details({ info }) {
     useEffect(() => {
         setLoading(true);
         fetch(process.env.REACT_APP_USERS_URL + info.id + '.json')
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(response.status);
+                }
+
+                return response.json();
+            })
             .then((data) => {
                 setLoading(false);
                 setData(data);

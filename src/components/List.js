@@ -6,7 +6,13 @@ function List({ onUserClick, activeId }) {
 
     useEffect(() => {
         fetch(process.env.REACT_APP_USERS_URL + 'users.json')
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(response.status);
+                }
+
+                return response.json();
+            })
             .then((data) => setUsers(data));
     }, []);
 
